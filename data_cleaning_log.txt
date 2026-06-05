@@ -1,7 +1,11 @@
-LOG PEMBERSIHAN DATA
-Baris bersih: 49995
-- Hapus 1 baris pencilan Pre_Semester_GPA (> 4.00)
-- Hapus 1 baris pencilan Post_Semester_GPA (> 4.00)
-- Hapus 1 baris pencilan Tool_Diversity (> 5)
-- Hapus 1 baris invalid Year_of_Study ("123")
-- Imputasi Primary_Use_Case dengan modus: Debugging/Troubleshooting
+=== LOG TRANSFORMATI/PEMBERSIHAN DATA ===
+Jumlah baris bersih akhir: 49995
+Detail langkah pengerjaan dan baris terdampak:
+- Perbaikan parsing baris korup di CSV mentah pada Student_ID: 100465, 145825
+- Imputasi Primary_Use_Case kosong dengan modus (Debugging/Troubleshooting) pada Student_ID: 100465
+- Hapus 1 baris kosong Post_Semester_GPA pada Student_ID: 145825
+- Hapus 1 baris pencilan Pre_Semester_GPA (> 4.00) pada Student_ID: 145219
+- Hapus 1 baris pencilan Post_Semester_GPA (> 4.00) pada Student_ID: 100089
+- Hapus 1 baris pencilan Tool_Diversity (> 5) pada Student_ID: 100297
+- Hapus 1 baris invalid Year_of_Study ("123") pada Student_ID: 127687
+- Normalisasi tipe data Student_ID ke Int64 dan Paid_Subscription ke Boolean asli
