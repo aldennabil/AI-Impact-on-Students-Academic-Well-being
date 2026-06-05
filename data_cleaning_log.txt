@@ -1,0 +1,7 @@
+LOG PEMBERSIHAN DATA
+Baris bersih: 49995
+- Hapus 1 baris pencilan Pre_Semester_GPA (> 4.00)
+- Hapus 1 baris pencilan Post_Semester_GPA (> 4.00)
+- Hapus 1 baris pencilan Tool_Diversity (> 5)
+- Hapus 1 baris invalid Year_of_Study ("123")
+- Imputasi Primary_Use_Case dengan modus: Debugging/Troubleshooting
