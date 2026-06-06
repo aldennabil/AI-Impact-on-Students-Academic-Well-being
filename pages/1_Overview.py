@@ -7,11 +7,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from utils import inject_css, load_clean_data, apply_premium_layout, chart_card, CUSTOM_RDBU
 
-st.set_page_config(
-    page_title="Overview — Dashboard AI Mahasiswa",
-    layout="wide",
-    initial_sidebar_state="collapsed",
-)
 inject_css()
 
 df = load_clean_data()

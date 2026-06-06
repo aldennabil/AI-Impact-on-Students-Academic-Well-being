@@ -8,11 +8,6 @@ import plotly.graph_objects as go
 from scipy.stats import ttest_ind
 from utils import inject_css, load_clean_data, apply_premium_layout, chart_card, CUSTOM_RDBU
 
-st.set_page_config(
-    page_title="Segmentasi — Dashboard AI Mahasiswa",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 inject_css()
 
 df = load_clean_data()
@@ -319,7 +314,7 @@ with chart_card(f"Tabel Komparatif per {name_x}"):
     )
 
 # ══════════════════════════════════════════════════════════════════
-#  BQ-6 : Berbayar vs Gratis — Kesetaraan Akses Digital
+#  BQ-6 : Berbayar vs Gratis, Kesetaraan Akses Digital
 # ══════════════════════════════════════════════════════════════════
 st.markdown("<h2 class='section-header'>Kesetaraan Akses Digital (Berbayar vs Gratis)</h2>", unsafe_allow_html=True)
 
@@ -329,10 +324,10 @@ free_f = df_f[df_f['Paid_Subscription'] == False]
 
 k1, k2, k3, k4 = st.columns(4)
 paid_kpis = [
-    (k1, "IPK Akhir — Berbayar", f"{paid_f['Post_Semester_GPA'].mean():.2f}", f"{len(paid_f):,} mahasiswa", "#4F46E5"),
-    (k2, "IPK Akhir — Gratis",   f"{free_f['Post_Semester_GPA'].mean():.2f}", f"{len(free_f):,} mahasiswa", "#94A3B8"),
-    (k3, "Retensi — Berbayar",   f"{paid_f['Skill_Retention_Score'].mean():.1f}%", "Skor rata-rata", "#10B981"),
-    (k4, "Retensi — Gratis",     f"{free_f['Skill_Retention_Score'].mean():.1f}%", "Skor rata-rata", "#94A3B8"),
+    (k1, "IPK Akhir, Berbayar", f"{paid_f['Post_Semester_GPA'].mean():.2f}", f"{len(paid_f):,} mahasiswa", "#4F46E5"),
+    (k2, "IPK Akhir, Gratis",   f"{free_f['Post_Semester_GPA'].mean():.2f}", f"{len(free_f):,} mahasiswa", "#94A3B8"),
+    (k3, "Retensi, Berbayar",   f"{paid_f['Skill_Retention_Score'].mean():.1f}%", "Skor rata-rata", "#10B981"),
+    (k4, "Retensi, Gratis",     f"{free_f['Skill_Retention_Score'].mean():.1f}%", "Skor rata-rata", "#94A3B8"),
 ]
 for col, label, val, sub, color in paid_kpis:
     with col:
