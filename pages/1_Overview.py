@@ -26,8 +26,7 @@ st.markdown(
 )
 st.markdown(
     "<p style='text-align:center;color:#475569;font-size:15px;'>"
-    "Profil demografis, perilaku belajar, dan distribusi variabel utama — "
-    "keseluruhan 50.000 mahasiswa.</p>",
+    "Profil demografis, perilaku belajar, dan distribusi variabel utama </p>",
     unsafe_allow_html=True,
 )
 st.markdown("---")

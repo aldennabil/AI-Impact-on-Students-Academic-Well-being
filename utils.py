@@ -105,6 +105,14 @@ div[data-testid="stVerticalBlockBorder"] {
     4px 8px 0px 2px rgba(0,0,0,0.05);
   margin-bottom: 24px;
 }
+
+/* ── Streamlit Tabs Text Color ── */
+button[data-baseweb="tab"] {
+  color: #0F172A !important;
+}
+button[data-baseweb="tab"] p {
+  color: #0F172A !important;
+}
 </style>
 """
 

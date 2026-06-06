@@ -321,7 +321,7 @@ with chart_card(f"Tabel Komparatif per {name_x}"):
 # ══════════════════════════════════════════════════════════════════
 #  BQ-6 : Berbayar vs Gratis — Kesetaraan Akses Digital
 # ══════════════════════════════════════════════════════════════════
-st.markdown("<h2 class='section-header'>Kesetaraan Akses Digital — Berbayar vs Gratis</h2>", unsafe_allow_html=True)
+st.markdown("<h2 class='section-header'>Kesetaraan Akses Digital (Berbayar vs Gratis)</h2>", unsafe_allow_html=True)
 
 
 paid_f = df_f[df_f['Paid_Subscription'] == True]
